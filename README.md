@@ -31,8 +31,8 @@ It remains challenging to find solutions that help solve problems for people to 
 
 # How would Kindred make money?
 - We will allow  people to stake their crypto coins with us so theyh have their own high interest trust fund with more robust defi strategies to be explored in the future
-- Taking 0.01% of  the transactions between beneficiaries 
-- Transaction fee when new users get onboarded  to our multisig wallet
+- Taking 0.01% of  the transactions between beneficiaries  and also for changes to be made of beneficiaries
+- Transaction fee of $5 for the first  5 users and $2 for any additional user  when new users get onboarded  to our multisig wallet
 - Tokenomics
 
 # Why the Project  wouldn't work?
