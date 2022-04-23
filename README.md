@@ -40,6 +40,7 @@ Staking companies and provide this beneficiary service. So we should figure a re
 
 # Impact
 Social Impact - This would be helpful for families whose parents would like to transfer funds to different family members without the risk of the funds going to other people who   weren't assigned the funds pre the user's death.
+Education -  We also plan on developing education programmes to raise awareness of the importance of kindred and why all folks no matter thier age  can know about the importance of setting up this functionality for their wallet.
 
 # Link to prototype
 kndred.xyz
