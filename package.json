@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@epnsproject/backend-sdk": "^2.0.0",
     "@gnosis.pm/safe-core-sdk": "^2.1.0",
     "@gnosis.pm/safe-ethers-lib": "^1.1.0",
     "@heroicons/react": "^1.0.5",
