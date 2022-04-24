@@ -9,7 +9,7 @@ export const ConnectMetamaskButtonComponent = () => {
     return (
         <div>
             {address ? (
-                <h4>Wallet Connected</h4>
+                null
             ) : (
                 <Button variant= "light" onClick={connectWithMetamask}>Connect Wallet</Button>
             )}
