@@ -917,6 +917,15 @@
     "@gnosis.pm/safe-core-sdk-types" "^1.1.0"
     "@gnosis.pm/safe-core-sdk-utils" "^1.1.0"
 
+"@gnosis.pm/safe-service-client@^1.1.2":
+  "integrity" "sha512-B8INt8jJVfvSGGboXV+0rm/hL2OSElhz19X7VdrZ7MSox3w7JEYE1nd6WWvsX0z2c4aZJQPVcN/PZC4i8BZgpQ=="
+  "resolved" "https://registry.npmjs.org/@gnosis.pm/safe-service-client/-/safe-service-client-1.1.2.tgz"
+  "version" "1.1.2"
+  dependencies:
+    "@ethersproject/abstract-signer" "^5.6.0"
+    "@gnosis.pm/safe-core-sdk-types" "^1.1.0"
+    "node-fetch" "^2.6.6"
+
 "@hapi/accept@5.0.2":
   "integrity" "sha512-CmzBx/bXUR8451fnZRuZAJRlzgm0Jgu5dltTX/bszmR2lheb9BpyN47Q1RbaGTsvFzn0PXAEs+lXDKfshccYZw=="
   "resolved" "https://registry.npmjs.org/@hapi/accept/-/accept-5.0.2.tgz"
@@ -7241,7 +7250,7 @@
   "resolved" "https://registry.npmjs.org/node-addon-api/-/node-addon-api-2.0.2.tgz"
   "version" "2.0.2"
 
-"node-fetch@^2.6.1":
+"node-fetch@^2.6.1", "node-fetch@^2.6.6":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   "version" "2.6.7"
