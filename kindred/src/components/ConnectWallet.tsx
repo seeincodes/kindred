@@ -1,4 +1,7 @@
 import { useAddress, useMetamask } from "@thirdweb-dev/react";
+import { Button } from 'react-bootstrap';
+
+
 
 export const ConnectMetamaskButtonComponent = () => {
     const connectWithMetamask = useMetamask();
@@ -6,9 +9,9 @@ export const ConnectMetamaskButtonComponent = () => {
     return (
         <div>
             {address ? (
-                <h4>Connected as {address}</h4>
+                <h4>Wallet Connected</h4>
             ) : (
-                <button onClick={connectWithMetamask}>Connect Metamask Wallet</button>
+                <Button variant= "light" onClick={connectWithMetamask}>Connect Wallet</Button>
             )}
         </div>
     );

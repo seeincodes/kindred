@@ -9,6 +9,10 @@ import { ethers } from 'ethers';
 import EthersAdapter from '@gnosis.pm/safe-ethers-lib';
 import SafeServiceClient, { OwnerResponse } from '@gnosis.pm/safe-service-client';
 import Safe, { SafeFactory, SafeAccountConfig } from '@gnosis.pm/safe-core-sdk';
+import { Button } from 'react-bootstrap';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
 
 // TODO: Implement Checking if the user already has an account
 // const isUserExistingClient = async () => {
@@ -54,14 +58,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button onClick={() => createSafe(['0x00f4349CC7fE6DE11bCDd00f0455b16cB35878AA', '0x0f8135a0eAaDa858C44E674E7fD3A4bb1D083157',])}>Create Safe</button>
+
+        <Button variant="light" onClick={() => createSafe(['0x00f4349CC7fE6DE11bCDd00f0455b16cB35878AA', '0x0f8135a0eAaDa858C44E674E7fD3A4bb1D083157',])}>Create Safe</Button>
         <ConnectMetamaskButtonComponent />
         <p>
         </p>
 
       </header>
-      <main>
-      </main>
     </div>
   );
 }
