@@ -12,17 +12,17 @@ module.exports = {
     boba_rinkeby: {
       provider: function () {
         return new HDWalletProvider({
-          privateKeys: [pk_1, pk_2],
-          providerOrUrl: 'https://rinkeby.boba.network',
+          privateKeys: [process.env.PRIVATE_KEY, process.env.PRIVATE_KEY_2],
+          providerOrUrl: process.env.BOBA_URL,
         })
       },
       network_id: 28,
-      host: 'https://rinkeby.boba.network',
+      host: process.env.BOBA_URL,
     }
   },
   compilers: {
     solc: {
-      version: '0.6.12',
+      version: '^0.8.0',
     },
   },
 }

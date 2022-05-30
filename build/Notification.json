@@ -1,0 +1,368 @@
+{
+  "contractName": "Notification",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Notification.sol\":\"Notification\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"hardhat/console.sol\":{\"keccak256\":\"0x72b6a1d297cd3b033d7c2e4a7e7864934bb767db6453623f1c3082c6534547f4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a8cb8681076e765c214e0d51cac989325f6b98e315eaae06ee0cbd5a9f084763\",\"dweb:/ipfs/QmNWGHi4zmjxQTYN3NMGnJd49jBT5dE4bxTdWEaDuJrC6N\"]},\"project:/contracts/Notification.sol\":{\"keccak256\":\"0x36a5425590cb3f4de20aabe7eed19bf4938e44b3ad71ec456b1d7f865b537e79\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://4d7bed99c0410a225fd15115ee0c3a819adf1f97f7a5fb772936ddc3eaf1b836\",\"dweb:/ipfs/QmbMEU8Sf6RbDuHhthtPRweemxikvSGMzy5444Cvr5SEbM\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e6042b35eca9812693554dc67b024eb2b9184b2949e0426b048c435d3746cd4e64736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e6042b35eca9812693554dc67b024eb2b9184b2949e0426b048c435d3746cd4e64736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "95:444:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "95:444:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.0;\n\nimport \"hardhat/console.sol\";\n\ncontract Notification {\n\n    struct user {\n        string name;\n        address benefaciary_address;\n        bool vote;\n        string description;\n        int percent;\n    }\n\n    struct owner {\n        string name;\n        address owner_address;\n        bool vote;\n        string description;\n    }\n\n    // TODO add function to retrieve wallet addresses of Owner and Beneficiaries, along with percent given\n\n    // TODO send to smart chain\n\n\n}\n",
+  "sourcePath": "/Users/xian/kindred/contracts/Notification.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Notification.sol",
+    "exportedSymbols": {
+      "Notification": [
+        8087
+      ],
+      "console": [
+        8063
+      ]
+    },
+    "id": 8088,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8065,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:1"
+      },
+      {
+        "absolutePath": "hardhat/console.sol",
+        "file": "hardhat/console.sol",
+        "id": 8066,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8088,
+        "sourceUnit": 8064,
+        "src": "64:29:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Notification",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8087,
+        "linearizedBaseContracts": [
+          8087
+        ],
+        "name": "Notification",
+        "nameLocation": "104:12:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Notification.user",
+            "id": 8077,
+            "members": [
+              {
+                "constant": false,
+                "id": 8068,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "153:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8077,
+                "src": "146:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 8067,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "146:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8070,
+                "mutability": "mutable",
+                "name": "benefaciary_address",
+                "nameLocation": "175:19:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8077,
+                "src": "167:27:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8069,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "167:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8072,
+                "mutability": "mutable",
+                "name": "vote",
+                "nameLocation": "209:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8077,
+                "src": "204:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 8071,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "204:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8074,
+                "mutability": "mutable",
+                "name": "description",
+                "nameLocation": "230:11:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8077,
+                "src": "223:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 8073,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "223:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8076,
+                "mutability": "mutable",
+                "name": "percent",
+                "nameLocation": "255:7:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8077,
+                "src": "251:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_int256",
+                  "typeString": "int256"
+                },
+                "typeName": {
+                  "id": 8075,
+                  "name": "int",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "251:3:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "user",
+            "nameLocation": "131:4:1",
+            "nodeType": "StructDefinition",
+            "scope": 8087,
+            "src": "124:145:1",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Notification.owner",
+            "id": 8086,
+            "members": [
+              {
+                "constant": false,
+                "id": 8079,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "305:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8086,
+                "src": "298:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 8078,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8081,
+                "mutability": "mutable",
+                "name": "owner_address",
+                "nameLocation": "327:13:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8086,
+                "src": "319:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 8080,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "319:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8083,
+                "mutability": "mutable",
+                "name": "vote",
+                "nameLocation": "355:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8086,
+                "src": "350:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 8082,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "350:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8085,
+                "mutability": "mutable",
+                "name": "description",
+                "nameLocation": "376:11:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 8086,
+                "src": "369:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 8084,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "369:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "owner",
+            "nameLocation": "282:5:1",
+            "nodeType": "StructDefinition",
+            "scope": 8087,
+            "src": "275:119:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 8088,
+        "src": "95:444:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:501:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {
+    "28": {
+      "events": {},
+      "links": {},
+      "address": "0xC39399469d75153dd5b98dEbF1dBdFeE7733EBA7",
+      "transactionHash": "0x7c0417dd4ad480213dc378af5371d26494c161c81c618e19e3bbde740ec3c8d0"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-30T18:38:59.664Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

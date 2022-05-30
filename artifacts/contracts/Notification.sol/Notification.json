@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Notification",
+  "sourceName": "contracts/Notification.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e8c67959a760f983b4cd951d7eb888db164853b7b676438f0dbc82c86ab86f4d64736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e8c67959a760f983b4cd951d7eb888db164853b7b676438f0dbc82c86ab86f4d64736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
